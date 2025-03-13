@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;
+ background-color: #f8f8f8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.container{
+    width: 80%;
+    background:white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+h2{
+    color: #222;
+    font-size: 24px;
+}
+.nav ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    display: inline-block;
+    background: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+.collections {
+    display: flex;
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.collection-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.collection-sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.collection-sub img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.collection-sub div {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #222;
+}
+
+.collection-sub div:last-child {
+    font-size: 14px;
+    color: #777;
+}
+.collection-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+.collection-info div{
+    font-family: 'Famyly', sans-serif;
+    font-size: 14px;
+}
+

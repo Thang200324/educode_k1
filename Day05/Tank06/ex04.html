@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "sivbar main main"
+            "footer footer footer";
+            gap: 24px;
+        }
+        header{
+            grid-area: header;
+            background-color: slategray;
+        }
+        .sivbar{
+            grid-area: sivbar;
+            background-color: lightcoral;
+        }
+        main{
+            grid-area: main;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: lightyellow;
+        }
+        .product-list{
+            display: grid;
+            padding: 12px 24px;
+
+        }
+        .product{
+            padding: 12px 24px;
+            border: 1px solid red;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="sivbar">sivbar</div>
+    <main>
+        <h1>Danh sách sản phẩm</h1>
+        <div class="product-list">
+            <div class="product">Product 1</div>
+            <div class="product">Product 2</div>
+            <div class="product">Product 3</div>
+            <div class="product">Product 4</div>
+            <div class="product">Product 5</div>
+        </div>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
