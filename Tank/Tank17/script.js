@@ -1,6 +1,8 @@
+let salary = parseFloat(prompt("nhập số thu nhập của bạn :"))
+
 function taxSalary(salary) {
     if (typeof salary !== 'number' || salary < 0) {
-        console.log("Thu nhập không hợp lệ");
+        document.body.innerHTML += `<p>Thu nhập không hợp lệ: ${salary}</p>`;
         return;
     }
 
@@ -16,13 +18,9 @@ function taxSalary(salary) {
         tax = (10000000 * 0.02) + (30000000 * 0.04) + (salary - 50000000) * 0.06;
     }
 
-    console.log(tax.toLocaleString('en-US', { style: 'currency', currency: 'VND' }));
+    document.body.innerHTML += `<p>Thu nhập hợp lệ: ${salary.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}, Thuế: ${tax.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>`;
 }
 
-// Test cases
-taxSalary(10000000); // 0
-taxSalary(15000000); // 200.000
-taxSalary(30000000); // 1.200.000
-taxSalary(100000000); // 17.200.000
-taxSalary(-10000000); // Thu nhập không hợp lệ
-taxSalary("abc"); // Thu nhập không hợp lệ
+// Nhập số từ người dùng
+
+taxSalary(salary);

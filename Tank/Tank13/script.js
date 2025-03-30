@@ -1,4 +1,5 @@
 // Input:
+let inputNumber = parseFloat(prompt("nhập số: "))
 function printPrimeNumber(n) {
     // Xử lý và in ra kết quả
     function isPrime(num) {
@@ -19,8 +20,9 @@ function printPrimeNumber(n) {
         }
         number++;
     }
-    console.log(primes.join(" "));
+    
+    document.body.innerHTML += `<p> các số nguyên tố : ${primes.join(" ")}</p>`
 }
 
 // Output:
-printPrimeNumber(10); // 2 3 5 7 11 13 17 19 23 29
+printPrimeNumber(inputNumber); // 2 3 5 7 11 13 17 19 23 29

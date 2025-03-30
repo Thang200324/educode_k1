@@ -1,5 +1,7 @@
-function taxiBill(km) {
-    if (typeof km !== "number" || km < 0) {
+function taxiBill() {
+    let km = parseFloat(prompt("Nhập số km: "))
+
+    if (isNaN(km) || km < 0) {
         console.log("Số km không hợp lệ");
         return;
     }
@@ -13,12 +15,8 @@ function taxiBill(km) {
         cost = 10000 + 9 * 8000 + (km - 10) * 6000;
     }
 
-    console.log(`Số tiền cần trả: ${cost}đ`);
+    document.body.innerHTML = `<p>Số tiền cần trả: ${cost}đ</p>`;
 }
 
-// Test:
-taxiBill(0.1); // Output: Số tiền cần trả: 10000đ
-taxiBill(1); // Output: Số tiền cần trả: 10000đ
-taxiBill(10); // Output: Số tiền cần trả: 82000đ
-taxiBill(-5); // Output: Số km không hợp lệ
-taxiBill("abc"); // Output: Số km không hợp lệ
+
+taxiBill();
