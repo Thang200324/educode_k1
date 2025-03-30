@@ -1,5 +1,6 @@
-let a = 3;
-let b = 5;
+let a = parseFloat(prompt("Nhập số thứ nhất: "));
+let b = parseFloat(prompt("Nhập số thứ hai: "));
+
 function swapNumber(a, b) {
     // Xử lý và in ra kết quả
     a = a + b;
