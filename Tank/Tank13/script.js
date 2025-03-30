@@ -1,28 +1,25 @@
-// Input:
+
 let inputNumber = parseFloat(prompt("nhập số: "))
+
 function printPrimeNumber(n) {
-    // Xử lý và in ra kết quả
     function isPrime(num) {
-        if (num < 2) return false;
-        for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i === 0) return false;
-        }
-        return true;
+      if (num < 2) return false;
+      for (let i = 2; i * i <= num; i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
     }
-
-    let count = 0;
-    let number = 2;
-    const primes = [];
-    while (count < n) {
-        if (isPrime(number)) {
-            primes.push(number);
-            count++;
-        }
-        number++;
+  
+    let result = [];
+    for (let i = 2; i < n; i++) {
+      if (isPrime(i)) {
+        result.push(i);
+      }
     }
-    
-    document.body.innerHTML += `<p> các số nguyên tố : ${primes.join(" ")}</p>`
+  
+    document.body.innerHTML += `<p> các số nguyên tố 2 đến n là : ${result.join(" ")}</p>`
 }
-
-// Output:
-printPrimeNumber(inputNumber); // 2 3 5 7 11 13 17 19 23 29
+  
+  // Output:
+  printPrimeNumber(inputNumber); // 2 3 5 7
+  
