@@ -1,6 +1,6 @@
 
 let n = parseFloat(prompt("nhập số ký tự để in: "))
-let changcter = parseFloat(prompt("nhập số ký tự in: "))
+let changcter = prompt("nhập ký tự in: ")
 
 
 function printInso() {
