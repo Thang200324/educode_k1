@@ -18,7 +18,7 @@ function taxSalary(salary) {
         tax = (10000000 * 0.02) + (30000000 * 0.04) + (salary - 50000000) * 0.06;
     }
 
-    document.body.innerHTML += `<p>Thu nhập hợp lệ: ${salary.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}, Thuế: ${tax.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>`;
+    document.body.innerHTML += `<p>Thu nhập hợp lệ: ${salary.toLocaleString('vi-VN')}, Thuế: ${tax.toLocaleString('vi-VN')}</p>`;
 }
 
 // Nhập số từ người dùng
