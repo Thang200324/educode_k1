@@ -1,6 +1,9 @@
 
+let n = parseFloat(prompt("nhập số ký tự để in: "))
+let changcter = parseFloat(prompt("nhập số ký tự in: "))
 
-function printInso(n, changcter) {
+
+function printInso() {
     for (let i = 0; i < n; i++) {
         let line = "";
         for (let j = 0; j < n - i - 1; j++) { 
@@ -12,4 +15,4 @@ function printInso(n, changcter) {
         console.log(line);
     }
 }
-printInso(5, "*");
+printInso(n, changcter);
