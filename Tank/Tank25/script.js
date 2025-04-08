@@ -8,11 +8,22 @@ const fruits = [
     "orange",
     "apple",
     "kiwi",
+    NaN,
+    undefined,
+    null,
+    NaN,
+    undefined,
+    null,
   ];
   
   function removeDuplicate(arr) {
     // Xử lý và in ra kết quả
-    return arr.filter((item, index) => arr.indexOf(item) === index);
+    return arr.filter((item, index) => {
+        if (item !== item) { 
+            return arr.findIndex(x => x !== x) === index;
+        }
+        return arr.indexOf(item) === index;
+    });
     
   }
   
