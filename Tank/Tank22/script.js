@@ -7,7 +7,7 @@ function checkSymmetricalArr(arr) {
     if (arr.length === 1) {
         return "Mảng có 1 phần tử, không kiểm tra được";
     }
-    for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+    for (let i = 0; i < (arr.length - 1) / 2; i++) {
         if (arr[i] !== arr[arr.length - 1 - i]) {
             return false;
         }
